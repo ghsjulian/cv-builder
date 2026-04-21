@@ -21,9 +21,12 @@ body {
 .cv-container {
     max-width: 800px;
     margin: 0 auto;
-    background: #fff;
+    background: #f0f7f8;
     padding: 5px 30px;
-    border: 1px solid #333;
+    border-radius: 5px;
+    border-style: double;
+    border-width: 2px;
+    border-color: #333;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     min-height: 100vh;
     position: relative;
@@ -80,8 +83,7 @@ body {
     width: 100px;
     height: 100px;
     object-fit: fill;
-    border: 1px solid var(--blue);
-    border-radius: 2px;
+    border-radius: 3px;
 }
 .cv-title {
     font-size: 22pt;
@@ -139,6 +141,7 @@ body {
     letter-spacing: 0.5px;
     color: #333;
 }
+
 .full-border {
     border-bottom: 3px solid #333;
 }
@@ -167,6 +170,7 @@ table {
     border-collapse: collapse;
     margin-top: 8px;
     font-size: 11pt;
+    border-radius: 5px;
 }
 
 th,
@@ -236,8 +240,8 @@ th {
 @media print {
     body {
         background: #fff !important;
-        /* padding: 0 !important;
-        margin: 0 !important; */
+        /*padding: 0 !important;
+        margin: 0 !important;*/
     }
 
     .cv-container {
@@ -246,6 +250,8 @@ th {
         max-width: 100% !important;
         min-height: auto !important;
         margin: 0 !important;
+        width: 100%;
+        height: 100%;
     }
 
     .print-btn,
